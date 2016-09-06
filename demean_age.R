@@ -4,6 +4,6 @@ demean_age <- age - sum(age)/length(age)
 
 write.table(demean_age, file="age_demeaned.tsv", row.names=FALSE, col.names=FALSE, sep="\t")
 
-echo "I think this will break the code!"
+print("you need to make sure to use R syntax!")
 
 print("done!")
