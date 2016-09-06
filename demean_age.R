@@ -2,7 +2,7 @@ args <- commandArgs(trailingOnly = TRUE)
 
 demographics <- read.csv(file=args[1], head=TRUE, sep="\t")
 
-age <- demographics[2]
+age <- demographics$age
 mean_age <- sum(age)/length(age)
 
 # Add in the assertion tests
